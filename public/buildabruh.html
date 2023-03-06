@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+
+
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Build-A-LSD</title>
+    <meta name="description" content="Bruh Bears is a collection of adorable bears with the most eccentric community. Built on Aptos.">
+    <link rel="icon" href="assets/favicon.png">
+    <meta property="og:image" content="assets/bruh-bears.png" />
+    <meta name="viewport" content="initial-scale=1">
+    <meta name="theme-color" content="#50c9ff">
+    <link rel="stylesheet" href="static/style.css" type="text/css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TW6YQ9GD4Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-TW6YQ9GD4Z');
+    </script>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="static/script.min.js"></script>
+    <script src="static/buildabruh.min.js"></script>
+</head>
+<body class="buildabruh">
+    <nav id="header"><noscript>You need to enable JavaScript to properly see this website.</noscript></nav>
+
+    <section id="content">
+        <!-- MAIN TITLE -->
+        <div id="main-title" class="blue">
+            <div class="wrapper">
+                <h1>Build-A-Bruh</h1>
+            </div>
+        </div>
+
+        <!-- BUILD-A-LSD -->
+        <div id="builder" class="blue">
+            <div class="wrapper">
+                <div class="pfp">
+                    <a id="random" onclick="randomPfp()" tooltip="Random" tooltip-position="left"><i class="bx bxs-dice-5"></i></a>
+                    <canvas id="canvas" width="800" height="800"></canvas>
+                </div>
+                <div class="attributes">
+                    <div class="trait">
+                        <select id="background" onchange="onSelectChange('background', 0)">
+                            <option selected disabled>Select Background</option>
+                            <option value="None">None</option>
+                            <option value="White">White</option>
+                            <option value="Green">Green</option>
+                            <option value="Blue">Blue</option>
+                            <option value="Purple">Purple</option>
+                            <option value="Yellow">Yellow</option>
+                            <option value="Red">Red</option>
+                        </select>
+                    </div>
+                    <div class="trait">
+                        <select id="fur" onchange="onSelectChange('fur', 1)">
+                            <option selected disabled>Select Fur</option>
+                            <option value="Brown">Brown</option>
+                            <option value="Chocolate">Chocolate</option>
+                            <option value="Ginger">Ginger</option>
+                            <option value="Sand">Sand</option>
+                            <option value="Cream">Cream</option>
+                            <option value="Charcoal">Charcoal</option>
+                            <option value="Rose">Rose</option>
+                            <option value="Panda">Panda</option>
+                            <option value="Zombie">Zombie</option>
+                            <option value="Alien">Alien</option>
+                            <option value="Devil">Devil</option>
+                            <option value="Skeleton">Skeleton</option>
+                        </select>
+                    </div>
+                    <div class="trait">
+                        <select id="clothes" onchange="onSelectChange('clothes', 2)">
+                            <option selected disabled>Select Clothes</option>
+                            <option value="None">None</option>
+                            <option value="Black t-shirt">Black t-shirt</option>
+                            <option value="Suit">Suit</option>
+                            <option value="Tanktop">Tanktop</option>
+                            <option value="Teal hoodie">Teal hoodie</option>
+                            <option value="Plaid shirt">Plaid shirt</option>
+                            <option value="Safety vest">Safety vest</option>
+                        </select>
+                    </div>
+                    <div class="trait">
+                        <select id="head" onchange="onSelectChange('head', 4)">
+                            <option selected disabled>Select Head</option>
+                            <option value="None">None</option>
+                            <option value="Black beanie">Black beanie</option>
+                            <option value="Fedora">Fedora</option>
+                            <option value="Strawhat">Strawhat</option>
+                            <option value="Hard hat">Hard hat</option>
+                            <option value="Cowboy hat">Cowboy hat</option>
+                            <option value="Halo">Halo</option>
+                        </select>
+                    </div>
+                    <div class="trait">
+                        <select id="eyes" onchange="onSelectChange('eyes', 3)">
+                            <option selected disabled>Select Eyes</option>
+                            <option value="None">None</option>
+                            <option value="Sunglasses">Sunglasses</option>
+                            <option value="Diamond glasses">Diamond glasses</option>
+                        </select>
+                    </div>
+                    <div class="trait">
+                        <select id="mouth" onchange="onSelectChange('mouth', 5)">
+                            <option selected disabled>Select Mouth</option>
+                            <option value="None">None</option>
+                            <option value="Black face mask">Black face mask</option>
+                            <option value="Beard">Beard</option>
+                        </select>
+                    </div>
+                    <a id="download" class="button" download="pfp.png" onClick="downloadPfp()"><i class="bx bxs-download"></i>Download</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer"></footer>
+</body>
+</html>
